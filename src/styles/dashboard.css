@@ -1,0 +1,29 @@
+.bg-canvas {
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:95vw;
+    height: 900px;
+    
+    /* opacity: 0.2; */
+    border-radius: 10px;
+    background: url(../DashBG3.svg);
+    text-align: left;
+    
+  }
+  
+  /*Welcome <Participant Name> */
+  .welcome-message{
+    margin: 2rem;
+    padding-top: 2rem;
+  
+    font-weight: 700;
+    font-size: 3.5rem;
+  
+    line-height: 4rem;
+      /* White BG2 */
+    color: #FCFCFC;
+  }
+
+
+

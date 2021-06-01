@@ -1,0 +1,14 @@
+.upload{
+    position: relative;
+    top: -260px;
+    left: 21.5%;
+    width: 25%;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+
+    /* Div Gradient */
+
+    background: linear-gradient(180deg, #373737 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 10px;
+}

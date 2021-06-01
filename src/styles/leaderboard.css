@@ -1,0 +1,14 @@
+.leaderboard {
+    /* position: absolute;
+    left: 50px; */
+    /* top: 170px; */
+    width: 20%;
+    height: 390px;
+    display: inline-block;
+    margin: 10px;
+    
+    /* Dashboard Gradient */
+    
+    background: linear-gradient(180deg, #373737 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 10px;
+  }
