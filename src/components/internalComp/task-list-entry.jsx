@@ -9,6 +9,9 @@ function Taskentry(props) {
         style={{ backgroundColor: props.banner }}
       ></div>
       <div className="task-name">{props.task}</div>
+      <div className="task-owner">{props.owner}</div>
+      <div className="task-due">{props.due}</div>
+      <input type="checkbox" name="task-done" id="task-list-check" />
     </div>
   );
 }
