@@ -1,20 +1,22 @@
 .tasklist {
-    /* Rectangle 5 */
+  /* Rectangle 5 */
 
-
-/* position: absolute;
+  /* position: absolute;
 left: 1035px;
 top: 170px; */
-position: relative;
-top: -125px;
-width: 25%;
-height: 265px;
-display: inline-block;
-margin: 10px;
+  position: relative;
+  top: -125px;
+  width: 25%;
+  height: 265px;
+  display: inline-block;
+  margin: 10px;
 
+  /* Div Gradient */
 
-/* Div Gradient */
-
-background: linear-gradient(180deg, #373737 50.74%, rgba(55, 55, 55, 0) 140.6%);
-border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    #373737 50.74%,
+    rgba(55, 55, 55, 0) 140.6%
+  );
+  border-radius: 10px;
 }
