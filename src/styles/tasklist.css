@@ -1,15 +1,12 @@
-.tasklist {
-  /* Rectangle 5 */
-
-  /* position: absolute;
-left: 1035px;
-top: 170px; */
-  position: relative;
-  top: -125px;
+.list-container {
+  width: 25%;
+  padding: 0;
   width: 25%;
   height: 265px;
   display: inline-block;
   margin: 10px;
+
+  /* padding-left: 3%; */
 
   /* Div Gradient */
 
@@ -19,4 +16,17 @@ top: 170px; */
     rgba(55, 55, 55, 0) 140.6%
   );
   border-radius: 10px;
+}
+
+.tasklist {
+  /* Rectangle 5 */
+
+  /* position: absolute;
+left: 1035px;
+top: 170px; */
+  position: relative;
+  /* top: -125px; */
+
+  padding-top: 5%;
+  padding-left: 5%;
 }
