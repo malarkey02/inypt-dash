@@ -1,14 +1,22 @@
-.colorkey{
-    position: relative;
-    top: -260px;
-    left: 21.5%;
-    width: 25%;
-    height: 110px;
-    display: inline-block;
-    margin: 10px;
+.colors-container {
+  position: relative;
+  top: -260px;
+  left: 21.5%;
+  width: 25%;
+  height: auto;
+  display: inline-block;
+  margin: 10px;
 
-    /* Div Gradient */
+  /* Div Gradient */
 
-    background: linear-gradient(180deg, #373737 50.74%, rgba(55, 55, 55, 0) 140.6%);
-    border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    #373737 50.74%,
+    rgba(55, 55, 55, 0) 140.6%
+  );
+  border-radius: 10px;
+}
+
+.colorkey {
+  padding: 5%;
 }
