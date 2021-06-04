@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/colorkey.css";
 import Colorkeys from "./internalComp/task-color-keys.jsx";
+import KeyText from "./compText/taskcolorkeytext.jsx";
 
 function Upload() {
   //   const color = "#FF8289";
@@ -10,8 +11,11 @@ function Upload() {
   ]);
   //   const [tasks, setTasks] = useState([]);
   return (
-    <div className="colorkey">
-      <Colorkeys taskLegends={taskLegends} />
+    <div className="colors-container">
+      <div className="colorkey">
+        <KeyText />
+        <Colorkeys taskLegends={taskLegends} />
+      </div>
     </div>
   );
 }
