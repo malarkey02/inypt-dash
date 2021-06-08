@@ -1,7 +1,7 @@
 .task-entry {
   /* position: absolute; */
   width: 90%;
-  height: 42px;
+  height: 48px;
   margin: 12px auto;
 
   background: linear-gradient(
@@ -15,7 +15,7 @@
 
   display: inline-flex;
   /* justify-content: space-between; */
-  /* align-items: stretch; */
+  align-items: center;
 }
 
 .task-entry > .task-name,

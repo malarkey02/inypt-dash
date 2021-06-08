@@ -11,12 +11,14 @@ function Tasklist() {
       task: "Qual. Theory Eq. 4",
       owner: "Admin",
       due: "25/4",
+      id: 1,
     },
     {
       banner: "#FA3B49",
       task: "Qual. Theory Eq. 5",
       owner: "Admin",
       due: "29/4",
+      id: 2,
     },
   ]);
 
@@ -30,6 +32,7 @@ function Tasklist() {
             task={entry.task}
             owner={entry.owner}
             due={entry.due}
+            key={entry.id}
           />
         ))}
         <Addentry />

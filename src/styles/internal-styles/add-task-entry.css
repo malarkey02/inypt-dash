@@ -1,0 +1,11 @@
+.add-entry-btn {
+  background-image: url("https://unsplash.it/42/42");
+  height: 42px;
+  width: 42px;
+
+  border-radius: 50%;
+
+  bottom: 0;
+  right: 0;
+  /* place on bottom right :) */
+}
