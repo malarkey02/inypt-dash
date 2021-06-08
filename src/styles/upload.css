@@ -12,3 +12,46 @@
     background: linear-gradient(180deg, #373737 50.74%, rgba(55, 55, 55, 0) 140.6%);
     border-radius: 10px;
 }
+
+.content-div h2{
+    font-weight: 700;
+    font-size: 20px;
+   
+    /* White BG2 */
+    
+    color: #FCFCFC;
+}
+
+.upload-text{
+    width: 50%;
+    font-size: 9px;
+}
+
+.upload-text ol{
+    padding-left: 10px;
+}
+
+
+
+/* Dropboxes element take ccss from here */
+.drop-div{
+   
+    margin: 5px;
+    height: 45px; 
+    float: left;
+
+}
+
+.dropdowns{
+    width: 350px;
+    position: relative;
+    left: -15px;
+    top: -90px
+}
+
+/*individually changing div size to accomodate spacing */
+
+.type-drop{
+    width: 80px;
+}
+

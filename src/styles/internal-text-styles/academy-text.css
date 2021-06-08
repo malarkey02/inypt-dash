@@ -1,0 +1,35 @@
+.academy-text h2{
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    
+    /* White BG2 */
+    
+    color: #FCFCFC;
+    
+}
+
+.lesson-headings{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+
+.lesson-columns{
+    margin: 7px;
+    font-weight: 300;
+    font-size: 7px;
+    line-height: 9px;
+   
+    letter-spacing: 0.4em;
+    color: #FFFFFF;
+
+}
+
+.title-lesson{
+    position: relative;
+    left: -10px;
+}

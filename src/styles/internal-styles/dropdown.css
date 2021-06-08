@@ -1,0 +1,65 @@
+/* Dropboxes element take ccss from here */
+.dropdown-div{
+    
+    width: 90px;
+    height: 45px;
+    
+
+}
+
+.dropdown-select{
+width: 90px;
+height: 25px;
+margin: 0 7px;
+
+
+background: linear-gradient(180deg, #242424 50.74%, #373737 140.6%);
+/* border-radius: 5px; */
+font-size: 10px;
+text-align: center;
+
+letter-spacing: 0.4em;
+color: white;
+border: transparent;
+}
+
+.dropdown-select option{
+    background: #6D6D6D;
+border-radius: 0px 0px 10px 10px;
+}
+.type-tag{
+    color: slategrey;
+}
+
+
+.dropdowns select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
+  
+  /* For IE10 */
+ .dropdowns select::-ms-expand {
+    display: none;
+  }
+
+  /*after bein selected*/
+
+  .selected{
+      content: none;
+    width: 90px;
+    height: 25px;
+    margin: 0 7px;
+    
+    
+    background: linear-gradient(180deg, #2C8F2A 50.0%, rgba(55, 55, 55, 0) 140.6%);
+    /* border-radius: 5px; */
+    font-size: 9px;
+    text-align: center;
+    
+   
+    color: white;
+    border: transparent;
+
+  }

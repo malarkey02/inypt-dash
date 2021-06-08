@@ -1,0 +1,53 @@
+.progress-card{
+    width:45%;
+    height: 90%;
+    margin: auto;
+    float: left; 
+
+}
+
+
+
+.piechart-div{
+    margin-top: 7px;
+    float: left;
+    height: 100px; 
+    width: 100px; 
+    display: flex;
+
+}
+
+
+.progress-text-div{
+    float: left;
+    width: 50%;
+    margin-left: 10px;
+    
+}
+
+.progress-text-div h2, p {
+    margin: 7px;
+}
+.progress-text-div h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    /* margin-bottom: 5px; */
+    
+    /* White BG2 */
+    
+    color: #FCFCFC;
+    
+    margin-top: 0%;
+
+}
+
+   
+    
+    .progress-text-div p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FCFCFC;
+    /* margin: 5px 0px; */
+    }

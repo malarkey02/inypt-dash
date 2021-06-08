@@ -5,9 +5,16 @@
     height: 365px;
     display: inline-block;
     margin: 10px;
+    
 
     /* Div Gradient */
 
     background: linear-gradient(180deg, #373737 50.74%, rgba(55, 55, 55, 0) 140.6%);
     border-radius: 10px;
+}
+
+
+.content-div{
+    margin: 7%;
+    text-align: left;
 }

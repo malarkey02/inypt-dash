@@ -5,7 +5,76 @@
 width: 90%;
 height: 45px;
 margin: 20px auto;
+overflow: hidden; 
+display: flex;
 
-background: linear-gradient(180deg, #2D2D2D 50.74%, rgba(55, 55, 55, 0) 140.6%);
+
+background: linear-gradient(180deg, #2D2D2D 50.0%, rgba(55, 55, 55, 0) 140.6%);
 filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.4));
-border-radius: 10px;}
+border-radius: 10px;
+}
+
+.activeBox{
+    width: 90%;
+height: 45px;
+margin: 20px auto;
+overflow: hidden; 
+display: flex;
+
+
+background: linear-gradient(180deg, #2C8F2A 50.0%, rgba(55, 55, 55, 0) 140.6%);
+filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.4));
+border-radius: 10px;
+}
+
+.entry-elements{
+    width: 90%;
+    height: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.position {
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+margin: auto 10px;
+
+color: #FFFFFF;
+}
+
+.playername {
+font-size: 11px;
+line-height: 14px;
+margin: auto 7px;
+
+
+color: #FFFFFF;
+
+}
+
+.points{
+
+position: absolute;
+right: 40px;
+font-weight: normal;
+font-size: 9px;
+line-height: 12px;
+letter-spacing: 0.4em;
+/* identical to box height */
+margin: auto 15px;
+
+color: #FFFFFF;
+}
+
+.avatar{
+    position: absolute;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* background: url(../../img-assets/Avatar1.jpg); */
+    background-size: cover;
+    
+}

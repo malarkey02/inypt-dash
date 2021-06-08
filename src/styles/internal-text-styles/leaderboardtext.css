@@ -1,5 +1,5 @@
 
-h2{
+.leaderboard-text h2{
 
 font-weight: 700;
 font-size: 24px;
@@ -13,10 +13,10 @@ color: #FCFCFC;
 }
 
 
-p{
+.leaderboard-text p{
 font-weight: 300;
 font-size: 14px;
-line-height: 14px;
+line-height: 16px;
 color: #FCFCFC;
 margin: 5px 0px;
 }
