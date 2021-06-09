@@ -1,0 +1,24 @@
+.keyEntry {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.keyEntry > * {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.taskName {
+  /* font-family: Inter; */
+  font-size: 11px;
+  font-weight: 300;
+  color: #fcfcfc;
+}
