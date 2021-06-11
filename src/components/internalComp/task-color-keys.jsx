@@ -13,7 +13,7 @@ function Colorkeys(props) {
             style={{ backgroundColor: taskLegend.color }}
           ></span>
 
-          <span className="taskName"> ~ {taskLegend.task}</span>
+          <span className="taskName"> - {taskLegend.task}</span>
         </div>
       ))}
     </div>

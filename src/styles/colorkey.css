@@ -1,19 +1,14 @@
 .colors-container {
-  position: relative;
-  top: -260px;
-  left: 21.5%;
-  width: 25%;
+  
+  width: 95%;
   height: auto;
   display: inline-block;
   margin: 10px;
+  margin-top: 15px;
 
   /* Div Gradient */
 
-  background: linear-gradient(
-    180deg,
-    #373737 50.74%,
-    rgba(55, 55, 55, 0) 140.6%
-  );
+  background: transparent;
   border-radius: 10px;
 }
 

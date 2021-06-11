@@ -22,7 +22,7 @@ function Dashboard(){
     <Calendar />
     <Upload/>
     <Meetings />
-    <Colorkey/>
+    
 
     
     </div>

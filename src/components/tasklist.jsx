@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/tasklist.css";
 import Taskentry from "./internalComp/task-list-entry.jsx";
-import TaskEntryHead from "./compText/tasklisttext.jsx";
+import Tasklisttext from "./compText/tasklisttext.jsx";
 
 function Tasklist() {
   return (
     <div className="list-container">
       <div className="tasklist">
-        <TaskEntryHead />
+        <Tasklisttext />
         <Taskentry
           banner="#FF8289"
           task="Qual. Theory Eq. 4"
