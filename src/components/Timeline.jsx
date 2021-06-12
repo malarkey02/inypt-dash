@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/timeline.css";
-import Statement from "./internalComp/Statement";
-import StatementFeatures from "./internalComp/Statementfeatures";
-import ProjectTimeline from "./internalComp/Projecttimeline";
-import ProjectFeatures from "./internalComp/Projectfeatures";
+import Statement from "./internalComp/Statement.jsx";
+import StatementFeatures from "./internalComp/Statementfeatures.jsx";
+import ProjectTimeline from "./internalComp/Projecttimeline.jsx";
+import ProjectFeatures from "./internalComp/Projectfeatures.jsx";
 
 function Timeline() {
   return (

@@ -1,3 +1,10 @@
 .project-timeline {
+  /* temp styles */
+  /* remove when separate page created */
+  width: 1152px;
+  height: 1131px;
+  left: 4px;
+  top: 31px;
+
   background: rgba(48, 48, 48, 0.79);
 }
