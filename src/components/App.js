@@ -1,11 +1,12 @@
-
-import '../styles/App.css';
-import Dashboard from './Dashboard'; 
+import "../styles/App.css";
+import Dashboard from "./Dashboard";
+import Timeline from "./Timeline";
 
 function App() {
   return (
     <div className="App">
-        <Dashboard /> 
+      <Dashboard />
+      <Timeline />
     </div>
   );
 }
