@@ -5,10 +5,10 @@ import Progressbar from './progressbar';
 import Tasklist from './tasklist';
 import Academy from './academy'; 
 import Projects from './projects';
-import Calendar from './calendar';
+import Calendar from './_calendar';
 import Upload from './upload';
 import Meetings from './meetings';
-import Colorkey from './colorkey';
+
 
 function Dashboard(){
     return (<div className="bg-canvas">

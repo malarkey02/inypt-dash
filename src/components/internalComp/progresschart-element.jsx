@@ -8,7 +8,8 @@ function Progresselement(){
 
  return <div className="progress-card"> 
     <div className="piechart-div">
-    <Progresspiechart className="piechart" value="56"/>;
+    <Progresspiechart  value="56"/>
+    
     </div>
     <div className="progress-text-div">
         <h2> Theory Completed </h2>
