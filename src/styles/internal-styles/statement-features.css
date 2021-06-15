@@ -1,0 +1,40 @@
+.feature-card {
+  width: 230px;
+  height: 20%;
+  margin: 37px;
+  /* padding: 3%; */
+  background: linear-gradient(
+    180deg,
+    #585858 50.74%,
+    rgba(55, 55, 55, 0) 140.6%
+  );
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
+  border-radius: 10px;
+
+  display: inline-flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  /* overflow: hidden; */
+}
+
+.feat-title {
+  font-weight: 700;
+  font-size: 16px;
+  width: 85%;
+
+  margin: 5%;
+}
+
+.feat-desc {
+  width: fit-content;
+
+  margin: 5%;
+}
+
+.feat-banner {
+  width: inherit;
+  height: 8px;
+  border-radius: 10px 10px 0px 0px;
+}

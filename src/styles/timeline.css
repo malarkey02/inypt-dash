@@ -4,7 +4,30 @@
   width: 1152px;
   height: 1131px;
   left: 4px;
-  top: 31px;
-
+  box-sizing: border-box;
+  margin-top: 350px; /*REMOVE ONCE PAGE CREATED*/
+  padding: 3%;
+  /* padding-right: none; */
   background: rgba(48, 48, 48, 0.79);
+
+  display: inline-block;
+  /* align-items: center; */
+
+  color: #fbfbfb;
+}
+
+.proj-title {
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 3%;
+  width: fit-content;
+}
+
+.features-row {
+  /* position: absolute; */
+
+  display: inline-flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  justify-content: space-around;
 }
