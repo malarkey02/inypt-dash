@@ -14,7 +14,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json({limit:'1mb'}));
 try {
-    mongoose.connect('mongodb+srv://admin-harsh:7hoPUeNHT2b42upX@cluster0.8y5it.mongodb.net/InYPTUsers?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+    mongoose.connect("mongodb+srv://admin-harsh:"+ process.env.DB_PASS+ "@cluster0.8y5it.mongodb.net/InYPTUsers?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 
 } catch (err){
     console.log(err); 
