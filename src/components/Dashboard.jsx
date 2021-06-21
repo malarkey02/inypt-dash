@@ -10,18 +10,19 @@ import Upload from './upload';
 import Meetings from './meetings';
 
 
-function Dashboard(){
+function Dashboard({userid}){
     return (<div className="bg-canvas">
-    <h1 className="welcome-message"> Welcome, Ishi! </h1>
+    <h1 className="welcome-message"> Welcome, user! </h1>
+   
    
     <Leaderboard />
-    <Progressbar />
-    <Tasklist />
+    <Progressbar userid={userid}/>
+    <Tasklist userid={userid}/>
     <Academy />
-    <Projects />
-    <Calendar />
-    <Upload/>
-    <Meetings />
+    <Projects userid={userid}/>
+    <Calendar userid={userid}/>
+    <Upload userid={userid}/>
+    <Meetings userid={userid}/>
     
 
     

@@ -1,25 +1,54 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../styles/tasklist.css";
 import Taskentry from "./internalComp/task-list-entry.jsx";
 import Tasklisttext from "./compText/tasklisttext.jsx";
 
-function Tasklist() {
+function Tasklist({userid}) {
+
+  const [tasklist, setTasklist] = useState([]);
+  
+
+  useEffect(()=>{ 
+
+     fetch('http://localhost:3002/gettasks', {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({useridValue: userid})
+        })
+        .then(backData => backData.json())
+        .then(result=> {
+
+            setTasklist(result.tasklist); 
+           
+        }) 
+        
+}, [])
+
+  
+
+  function createTask(singleTaskObj){
+   
+    const date = singleTaskObj.due.substring(8)+"/"+singleTaskObj.due.substring(5,7);
+
+    return (<Taskentry 
+            banner={singleTaskObj.bannerColor}
+            task={singleTaskObj.task}
+            owner={singleTaskObj.owner}
+            due={date} />);
+
+  }
+
   return (
     <div className="list-container">
       <div className="tasklist">
         <Tasklisttext />
-        <Taskentry
-          banner="#FF8289"
-          task="Qual. Theory Eq. 4"
-          owner="Admin"
-          due="25/4"
-        />
-        <Taskentry
-          banner="#FA3B49"
-          task="Qual. Theory Eq. 5"
-          owner="Admin"
-          due="29/4"
-        />
+
+        {tasklist.map(createTask)}
+        
+
+       
       </div>
     </div>
   ); //pass props... somehow

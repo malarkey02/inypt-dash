@@ -117,3 +117,13 @@
     color: black;
     
   }
+
+  .projA{
+    background-color: #c9c9c9;
+    color: rgb(255, 153, 0);
+  }
+
+  .projB{
+    background-color: #575757;
+    color: white;
+  }

@@ -6,7 +6,9 @@ function TaskEntryHead() {
     <div className="listHeadder">
       Task List
       <div className="listSubHead-container">
+       
         <div className="Task">Task</div>
+       
         <div className="Owner">Owner</div>
         <div className="Due">Due</div>
       </div>

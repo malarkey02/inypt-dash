@@ -10,40 +10,70 @@ function isSameDay(a, b) {
  
 }
 
-let datesToAddClassTo = [];
-
- 
-//function to add a range of dates
-function dataeRange(startDay, endDay, month){
-  for(var i=startDay;i<=endDay;i++ ){
-    var date = new Date(2021, month, i);
-    datesToAddClassTo.push(date);
-  }
-}
-
-function tileClassName({ date, view }) {
-  // Add class to tiles in month view only
-
-  //function to add a range of dates Params - Start DD, End DD, Month MM 
-  dataeRange(2, 4, 5); 
-  if (view === 'month') {
-    // Check if a date React-Calendar wants to check is on the list of dates to add class to
-    if (datesToAddClassTo.find(dDate => isSameDay(dDate, date))) {
-      return "myClassName";
-    }
-  }
-}
-
 
 
 function _Calendar(){
   const [value, setValue] = useState(new Date());
   
-
-
   function onChange(nextValue) {
     setValue(nextValue);
   }
+
+
+  const color1 = {
+    _id: "proj1",
+    startDay: 15, 
+    endDay: 20,
+    month: 5,
+    className: "projA"
+  }
+
+  const color2 = {
+    _id: "proj2",
+    startDay: 21, 
+    endDay: 25,
+    month: 5,
+    className: "projB"
+  }
+
+  const tileColoring = [color1, color2];
+
+  let arrayOfDateArrays = [];
+ 
+
+function arrayDate(){
+   //using an array of objects to color the tiles
+   tileColoring.forEach( e=> {
+
+    let dateArray = [];
+  
+    for(var i = e.startDay; i <= e.endDay; i++){
+      var date = new Date (2021, e.month, i);
+      dateArray.push(date);
+      }
+      arrayOfDateArrays.push(dateArray); 
+     
+  })// end of forEach with the array of objects
+}
+
+function tileClassName({ date, view }) {
+ 
+ 
+  arrayDate();
+  if (view === 'month') {
+    // Check if a date React-Calendar wants to check is on the list of dates to add class to
+   
+    for(var j = 0; j < arrayOfDateArrays.length; j++){
+
+      if (arrayOfDateArrays[j].find(dDate => isSameDay(dDate, date))) {
+        return tileColoring[j].className;
+      }
+
+    }
+  }
+
+ 
+}
 
   
     return <div className="calendar">
