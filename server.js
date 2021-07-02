@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt'); 
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const { intervalToDuration } = require('date-fns');
+require('dotenv').config();
 
 
 
@@ -13,8 +13,11 @@ const app = express();
 app.use(cors()); 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json({limit:'1mb'}));
+
+const link = "mongodb+srv://admin-harsh:" + process.env.DB_PASS + "@cluster0.8y5it.mongodb.net/InYPTUsers?retryWrites=true&w=majority";
+
 try {
-    mongoose.connect("mongodb+srv://admin-harsh:"+ process.env.DB_PASS+ "@cluster0.8y5it.mongodb.net/InYPTUsers?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+    mongoose.connect(link, {useNewUrlParser: true, useUnifiedTopology: true});
 
 } catch (err){
     console.log(err); 
@@ -34,6 +37,13 @@ const userSchema = new mongoose.Schema ({
 
     calendar: [{class: String, startDay: String, endDay: String}],
 
+})
+
+const meetingSchema = new mongoose.Schema({
+    meetingDetails: String,
+    meetingTopic: String, 
+    meetingLink: String, 
+    attendees: [String]
 })
 
 
@@ -82,13 +92,11 @@ app.use("/login", function(req, res){
 //Progress Tab
 app.use("/getprogress", function(req, res){
     const userid = req.body.useridValue;
-    console.log(userid);
 
     User.find({_id: userid}, function(err, foundUser){
         if(err){
             console.log(err);
         } else {
-            console.log("found user sending values");
          
 
             res.send({
@@ -129,7 +137,6 @@ app.use("/getprojects", function(req, res){
         if(err){
             console.log(err);
         } else {
-            console.log("found user sending tasks");
          
 
             res.send({

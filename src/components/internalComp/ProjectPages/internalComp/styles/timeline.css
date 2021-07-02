@@ -1,0 +1,92 @@
+.timeline{
+    position: relative;
+    background:  transparent;
+    width: 90%;
+    height: 32rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 10px;
+
+    font-family: Poppins;
+    font-style: normal;
+}
+
+.toggle-buttons{
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+}
+
+.toggle-buttons button{
+
+border: transparent;
+height: 2rem;
+width: 4rem;
+color: #fff;
+font-weight: 500;
+text-align: center;
+margin: 0%;
+padding: 0%;
+
+}
+
+.daily-active{
+    background: linear-gradient(180deg, #0e0e0e 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 7px 0px 0px 7px;
+}
+
+.daily-inactive{
+    border-radius: 7px 0px 0px 7px;
+    background: linear-gradient(180deg, #CDCDCD 50.74%, rgba(55, 55, 55, 0) 140.6%);
+}
+
+.month-active{
+    background: linear-gradient(180deg, #0e0e0e 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 0px 7px 7px 0px;
+}
+.month-inactive{
+    background: linear-gradient(180deg, #CDCDCD 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 0px 7px 7px 0px;
+}
+
+.phase-text{
+    display: flex;
+    margin: 2rem 0;
+    margin-left: 1.5rem;
+    justify-content: space-between;
+    width: 70%;
+    font-variant: small-caps;
+
+
+}
+
+.weeks-days{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    margin: 1.5rem;
+    position: relative;
+    
+}
+
+
+
+.timeline h2 {
+    float:inline;
+    margin-left: 1.5rem;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.timeline span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 14px;
+    
+}
+
+
+

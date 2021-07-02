@@ -1,0 +1,37 @@
+.project-statement {
+
+    width: 95%;
+    height: 10rem;
+    margin: 0 auto;
+    /* position: relative; */
+    background: linear-gradient(
+      180deg,
+      #474646 50.74%,
+      rgba(55, 55, 55, 0) 140.6%
+    );
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+    /* width: 90%; */
+    /* box-sizing: border-box; */
+    display: flow-root;
+    font-weight: 500;
+    /* margin-right: 10px; */
+  }
+  
+  .statement-header{
+    margin: 0.5rem 2rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+
+  .proj-smt-content {
+      margin: 0.5rem 2rem;
+      /* margin-left: ; */
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 170%;
+  }

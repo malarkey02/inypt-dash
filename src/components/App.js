@@ -9,6 +9,7 @@ import React, {useState} from "react";
 
 import '../styles/App.css';
 import Dashboard from './Dashboard'; 
+import Problem5 from './internalComp/ProjectPages/problem5'
 import Login from './login/Login';
 import useToken from './login/useToken';
 
@@ -37,7 +38,7 @@ function App() {
           </Route>
 
           <Route exact path="/problem-14">
-            <h1>This is Problem 14</h1>
+            <Problem5/>
           </Route>
 
           {/* <Route exact path="/login">

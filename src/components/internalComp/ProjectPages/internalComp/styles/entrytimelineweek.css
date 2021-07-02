@@ -1,0 +1,99 @@
+.task-on-timeline{
+    width: 20%;
+    height: 2.5rem;
+    position: absolute;
+    border-radius: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contentcover{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.task-on-timeline span {
+    line-height: 2.5rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.task-on-timeline .task-title {
+    font-weight: 600;
+font-size: 12px;
+}
+
+.task-on-timeline .task-desc{
+    font-weight: normal;
+font-size: 11px;
+}
+
+.hover-subtitle, .hover-desc{
+    margin-top: 0.75rem;
+    margin-left: 1rem;
+    margin-bottom: 0px;
+}
+
+.task-on-timeline .dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.task-on-hover{
+    width: 220px;
+height: 220px;
+position: absolute;
+color: black;
+
+background: #FFFFFF;
+border-radius: 5px;
+z-index: 5;
+}
+
+.task-on-hover h2{
+font-size: 18px;
+line-height: 21px;
+margin: 0.5rem 1rem;
+margin-top: 1rem;
+}
+
+.task-on-hover p {
+    font-size: 11px;
+line-height: 14px;
+}
+
+.task-on-hover .hover-subtitle{
+    font-size: 14px;
+}
+
+.hover-subtasks{
+    margin-left: 1rem;
+    margin-top: 5px;
+}
+
+
+#subtask-title{
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 9px;
+    /* margin-left: 30px; */
+}
+
+#due-title{
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 9px;
+    /* margin-left: 100px; */
+}
+
+.hover-subtask, .hover-due{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+}

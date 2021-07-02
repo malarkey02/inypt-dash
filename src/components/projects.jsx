@@ -43,9 +43,9 @@ function Projects({userid}){
                              projectphase={singleProjectObj.projPhase}
                              theoryProg={singleProjectObj.theoryProg} 
                              practicalProg={singleProjectObj.practicalProg} 
-                              projLink={singleProjectObj.projLink}
+                             projLink={singleProjectObj.projLink}
                               
-                             />
+               />
   }
 
     return <div className="projects">

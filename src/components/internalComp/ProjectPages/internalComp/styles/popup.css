@@ -1,0 +1,100 @@
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+  }
+   
+  .box {
+    position: relative;
+    width: 70vh;
+    margin: auto;
+    height: auto;
+    max-height: 50vw;
+    /* margin-top: calc(100vh - 85vh - 20px); */
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow: auto;
+    color: black;
+    z-index: 2;
+  }
+   
+  .close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(35% - 30px);
+    top: calc(100vh - 85vh - 33px);
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    border: 1px white solid;
+    font-size: 20px;
+  }
+
+  .popup-title{
+      margin: 0%;
+  }
+  .popup-subtitle{
+      margin: 0.5rem 0;
+      
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .popup-subtask{
+    border-bottom: 0.5px double #000000;
+    font-size: 14px;
+    width: 95%;
+    padding: 10px 0;
+  }
+  .dropdown-carot{
+    position: absolute;
+    right: 2.5rem;
+  }
+
+  .popup-subtask-expand{
+      position: relative;
+    top: -3px;
+    width: 95%;
+    height: auto;
+
+    
+    background: #fcfcfc;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+
+  .popup-subtask-expand-firstline{
+      margin: 1rem;
+  }
+  .popup-subtask-expand-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 13px;
+}
+.popup-subtask-expand-due{
+    position: absolute;
+    right: 1rem;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 12px;
+    color: #da6600;
+    font-variant: small-caps;
+}
+
+.popup-subtask-expand-info{
+    margin-left: 1rem;
+}

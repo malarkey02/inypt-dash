@@ -1,0 +1,46 @@
+.week-column{
+    width: 5rem;
+    height: 20rem;
+    float: left;
+    
+    border-left: 2px solid white;
+}
+
+
+.week-column h1 {
+    margin: 15px;
+    margin-bottom: 0px;
+
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.week-column p{
+    margin: 15px;
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.day-column{
+    width: 8rem;
+    height: 20rem;
+    float: left;
+    
+    border-left: 2px solid white;
+}
+
+.day-column h1 {
+    margin: 15px;
+    margin-bottom: 0px;
+
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.day-column p{
+    margin: 15px;
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 12px;
+}

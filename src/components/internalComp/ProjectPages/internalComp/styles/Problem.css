@@ -1,0 +1,40 @@
+.project-timeline {
+    /* temp styles */
+    /* remove when separate page created */
+width: 90%;
+margin: 3rem auto;
+box-sizing: border-box;
+padding: 3%;
+/* padding-right: none; */
+background: rgba(48, 48, 48, 0.79);
+
+display: inline-block;
+/* align-items: center; */
+
+color: #fbfbfb;
+border-radius: 10px;
+}
+
+.proj-title {
+font-weight: 700;
+font-size: 36px;
+padding-bottom: 3%;
+width: fit-content;
+}
+
+.features-row {
+/* position: absolute; */
+
+display: inline-flex;
+/* justify-content: space-between; */
+/* align-items: center; */
+justify-content: space-around;
+}
+
+.project-sections{
+    display: flex;
+    margin: 2rem;
+
+    justify-content: space-between;
+  
+}
