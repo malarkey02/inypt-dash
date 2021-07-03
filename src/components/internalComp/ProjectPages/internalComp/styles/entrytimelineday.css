@@ -1,11 +1,9 @@
-.task-on-timeline{
+.task-on-timelineday{
     width: 35%;
     height: 5rem;
     position: absolute;
     border-radius: 5px;
-    text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
     background: #252525;
 }
 
@@ -17,20 +15,22 @@
     z-index: 1;
 }
 
-.task-on-timeline span {
+.task-on-timelineday span {
     line-height: 2.5rem;
     vertical-align: middle;
     margin-left: 0.5rem;
 }
 
-.task-on-timeline .task-title {
+.task-on-timelineday .task-title {
     font-weight: 600;
 font-size: 12px;
+margin-bottom: 2px;
 }
 
-.task-on-timeline .task-desc{
+.task-on-timelineday .task-desc{
     font-weight: normal;
 font-size: 11px;
+margin-top: 0%;
 }
 
 .hover-subtitle, .hover-desc{
@@ -39,7 +39,7 @@ font-size: 11px;
     margin-bottom: 0px;
 }
 
-.task-on-timeline .dot {
+.task-on-timelineday .dot {
     height: 0.5rem;
     width: 0.5rem;
     background-color: white;

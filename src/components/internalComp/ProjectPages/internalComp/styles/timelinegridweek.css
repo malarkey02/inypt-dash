@@ -3,7 +3,8 @@
     height: 20rem;
     float: left;
     
-    border-left: 2px solid white;
+    border-left: 1.75px solid rgb(175, 175, 175);
+
 }
 
 
@@ -27,7 +28,7 @@
     height: 20rem;
     float: left;
     
-    border-left: 2px solid white;
+    border-left: 1.75px solid rgb(175, 175, 175);
 }
 
 .day-column h1 {

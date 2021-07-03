@@ -32,11 +32,10 @@ function Entrytimeline(props){
     
     const borderStyle = "solid 2px" + props.color;
     return <div>  
-             <div style={{top:props.top, left:props.left, border:borderStyle}} onMouseOver={handleHoverEnter} onMouseMove={handlePosition} onMouseLeave={handleHoverExit} className="task-on-timeline">
+             <div style={{top:props.top, left:props.left, border:borderStyle}} onMouseOver={handleHoverEnter} onMouseMove={handlePosition} onMouseLeave={handleHoverExit} className="task-on-timelineday">
                     <div className="contentcover"></div>
-                    <span className="task-title">{props.phase}</span> 
-                    <span className="task-desc">{props.desc} </span>
-                    <span className="dot"></span>
+                    <p className="task-title">{props.phase}</p> 
+                    <p className="task-desc">{props.desc} </p>
                     
              </div>
             

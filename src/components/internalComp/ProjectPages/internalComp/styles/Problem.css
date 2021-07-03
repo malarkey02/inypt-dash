@@ -19,12 +19,13 @@ border-radius: 10px;
 font-weight: 700;
 font-size: 36px;
 padding-bottom: 3%;
+margin: 1.5rem 1.75rem;
 width: fit-content;
 }
 
 .features-row {
 /* position: absolute; */
-
+margin: 1.25rem 0;
 display: inline-flex;
 /* justify-content: space-between; */
 /* align-items: center; */

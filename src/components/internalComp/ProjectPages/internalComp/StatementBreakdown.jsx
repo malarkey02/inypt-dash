@@ -1,7 +1,7 @@
 function StatementBreakdown(props) {
-    const borderStyle = "2px solid" + props.color;
+    const borderStyle = "1.5px solid" + props.color;
 
-    const styles = { border: borderStyle, display: "inline", borderRadius: "3px"};
+    const styles = { border: borderStyle, display: "inline"};
     return <div style={styles}>{props.data}</div>;
   }
   

@@ -46,7 +46,7 @@ function Timelinegridday (){
                 desc={desc}
                 subtasks={subtasks}
             />
-            <Entrytimelineday top="8rem" left="1rem" 
+            <Entrytimelineday top="11.5rem" left="25rem" 
                 color="#2E9CCA"
                 title="Pre-Exp Research"
                 phase="Experiment"
