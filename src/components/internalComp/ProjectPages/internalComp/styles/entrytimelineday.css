@@ -21,6 +21,10 @@
     margin-left: 0.5rem;
 }
 
+.daily-task-text-wrapper{
+    padding: 0.5% 4%;
+}
+
 .task-on-timelineday .task-title {
     font-weight: 600;
 font-size: 12px;

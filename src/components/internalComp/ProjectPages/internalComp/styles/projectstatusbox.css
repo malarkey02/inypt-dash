@@ -1,0 +1,174 @@
+.status-box{
+
+    width: 60%;
+    height: 26rem;
+    margin-left: 1.5rem;
+
+    background: transparent;
+    border: 1.5px solid rgb(110, 110, 110);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.status-box-title{
+    margin-top: 0;
+}
+
+.piechart-status{
+    width: 90%;
+    height: 8rem;
+    margin: 0 auto;
+}
+
+/* Font Styling */
+.piechart-status h2{
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.piechart-status p{
+    font-size: 0.8rem;
+    margin: 0%;
+}
+
+.theory-card, .practical-card{
+    width: 50%;
+    float: left;
+}
+
+.piechart-div{
+    width:35%;
+}
+
+.status-text-div{
+    width: 50%;
+    float: left;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    
+}
+
+.task-headings-completed{
+    margin-top: 0.5rem;
+}
+
+.project-task-box{
+    background: linear-gradient(180deg, #222222 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border: 0.1px solid rgb(44, 44, 44);
+    width: 75%;
+    border-radius: 5px;
+    height: 10rem;
+    padding: 10px;
+    float: left;
+}
+
+.status-box td{
+    display: inline;
+  
+    font-size: 12px;
+}
+
+.task-headings-completed{
+    position: relative;
+    font-size: 12px;
+    width: 90%;
+    height: 10%;
+}
+
+.task-headings-completed .task-heading-name{
+    position: absolute;
+    left: 12%;
+}
+
+.task-headings-completed .marked-on{
+    position: absolute;
+    left: 47%;
+}
+
+.task-headings-completed .admin-eval{
+    position: absolute;
+    left: 70%;
+}
+
+/* Toggle between upcoming and completed tasks */
+.task-headings-completed .due-on{
+    position: absolute;
+    left: 50%;
+}
+
+.task-headings-completed .task-project-section{
+    position: absolute;
+    left: 70%;
+}
+
+
+
+.scrollbox-project-tasks{
+    height: 75%;
+    margin: 1rem auto;
+    margin-top: 0.5rem;
+    padding: 0 1.5rem;
+
+    overflow-y: auto;
+    
+}
+
+.scrollbox-toggle-tasks{
+    position: relative;
+    width: 15%;
+    height: 10rem;
+    float: right;
+    right: 1rem;
+}
+
+
+.toggle-completed-tasks-active, .toggle-upcoming-tasks-active, .toggle-completed-tasks-inactive, .toggle-upcoming-tasks-inactive {
+    width: 80%;
+    height: 3.5rem;
+    padding: 7%;
+    margin: 10%;
+    margin-top: 1rem;
+    
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    /* border: 1px solid #CDCDCD; */
+    transition: all 0.3s ease 0s;
+
+       
+}
+
+.toggle-completed-tasks-inactive{
+    background: linear-gradient(180deg, #CDCDCD 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+
+}
+.toggle-completed-tasks-active{
+    background: linear-gradient(180deg, #1E1C1C 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 5px 5px 0 0;
+
+    margin-bottom: 0;
+}
+
+
+.toggle-upcoming-tasks-active{
+    background: linear-gradient(180deg, #141414 50.74%, rgba(70, 70, 70, 0) 140.6%);
+    border-radius: 0 0 5px 5px;
+    
+
+    margin-top: 0%;
+     
+}
+
+.toggle-upcoming-tasks-inactive{
+    background: linear-gradient(180deg, #CDCDCD 50.74%, rgba(55, 55, 55, 0) 140.6%);
+    border-radius: 0 0 5px 5px;
+    margin-top: 0%;
+    font-weight: 500;
+}
+
+

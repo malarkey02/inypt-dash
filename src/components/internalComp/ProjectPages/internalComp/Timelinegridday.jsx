@@ -39,7 +39,7 @@ function Timelinegridday (){
     {arr.map(createWeekCol)}
 
   
-            <Entrytimelineday top="5rem" left="0"
+            <Entrytimelineday top="5rem" left="0rem"
                 color="#CA662E"
                 title="Pre-Exp Research"
                 phase="Experiment"

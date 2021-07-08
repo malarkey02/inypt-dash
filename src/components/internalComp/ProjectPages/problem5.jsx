@@ -7,35 +7,18 @@ import Timeline from "./internalComp/Timeline";
 // import ProjectFeatures from "./internalComp/Projectfeatures.jsx";
 
 import Projectsection from "./internalComp/Projectsection";
+import Projectstatus from "./internalComp/Projectstatusbox";
+
+import Projectcards from "./internalComp/Projectcards";
 
 import Popup from './internalComp/Popup.jsx';
 import Projectsectionbox from "./internalComp/Projectsectionbox";
 
 function Problem5() {
-    var noHighlight = ["Oscillatory flames can be observed ", " Two such oscillators can couple with each other, resulting in ", " (depending on the distance between the sets of candles). Explain and "];
-    var highlights = ["when several candles burn next to each other.", "in-phase or anti-phase synchronisation", " investigate this phenomenon."]
+   
 
     var projTitle = "Synchronised Candles";
-    var features = [
-      {
-        title: "Problem Operative Condition",
-        desc: "The study of why this phenmenon ends up in an in-phase or anti-phase synchronisation is the aspect that will ensure problem completion",
-        bannerColor: "#F2994A",
-        id: 1,
-      },
-      {
-        title: "Problem Fullfillment Aspect",
-        desc: "The study of why this phenmenon ends up in an in-phase or anti-phase synchronisation is the aspect that will ensure problem completion",
-        bannerColor: "#27AE60",
-        id: 2,
-      },
-      {
-        title: "Investigative Phenomenon",
-        desc: "The buring of several candles next to each other, is the action part of the experiement",
-        bannerColor: "#7000fe",
-        id: 3,
-      },
-    ];
+    
 
 
     const [popup, setpopup] = useState(false);
@@ -51,17 +34,12 @@ function Problem5() {
       <div className="project-timeline">
         
         <div className="proj-title">{projTitle}</div>
-        <Statement data={noHighlight} breakdownData={highlights}/>
-        <div className="features-row">
-          {features.map((feature) => (
-            <StatementFeature
-              title={feature.title}
-              desc={feature.desc}
-              banner={feature.bannerColor}
-              id={feature.id}
-            />
-          ))}
-        </div>
+       
+          <div className="status-cards-wrapper">
+            <Projectstatus />
+            <Projectcards />
+          </div>
+    
 
             <Timeline />
   
@@ -69,12 +47,21 @@ function Problem5() {
         {/* <ProjectFeatures /> */}
 
             <div className="project-sections">
-                <Projectsection />
-                <Projectsection />
-                <Projectsection />
-                <Projectsection />
+                <Projectsection color="linear-gradient(201.97deg, #00C454 -5.47%, rgba(0, 196, 184, 0) 135.44%, rgba(213, 25, 25, 0.58) 135.44%)" 
+                  title="Qualitative Theory"
+                  subtasks="3"
+                />
+                <Projectsection color="linear-gradient(218.17deg, #00C2FF 14.96%, rgba(0, 194, 255, 0) 116.11%)" 
+                  title="Experiments"
+                  subtasks="4"/>
+                <Projectsection color=" linear-gradient(186.35deg, #FF3D00 11.56%, rgba(255, 1, 225, 0.44) 133.58%)" 
+                  title="Quantitative Model"
+                  subtasks="3"/>
+                <Projectsection color="linear-gradient(218.17deg, #7000FF 14.96%, rgba(44, 183, 226, 0) 116.11%)" 
+                  title="Analysis"
+                  subtasks="1"/>
             </div>
-
+          
       </div>
       );
     }

@@ -1,6 +1,7 @@
 .popup-box {
     position: fixed;
-    background: #00000050;
+    background: #161616;
+    opacity: 0.9;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -24,6 +25,16 @@
     color: black;
     z-index: 2;
   }
+
+  .problem-statement-box{
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    height: auto;
+    max-height: 50vw;
+    padding: 1.5rem;
+
+  }
    
   .close-icon {
     content: 'x';
@@ -31,6 +42,23 @@
     position: fixed;
     right: calc(35% - 30px);
     top: calc(100vh - 85vh - 33px);
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    border: 1px white solid;
+    font-size: 20px;
+  }
+
+  .statement-close-icon{
+    content: 'x';
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
     background: transparent;
     width: 25px;
     height: 25px;

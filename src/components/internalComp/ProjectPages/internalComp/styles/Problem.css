@@ -39,3 +39,9 @@ justify-content: space-around;
     justify-content: space-between;
   
 }
+
+.status-cards-wrapper{
+    width: 95%;
+    display: flex;
+    margin: 0cm auto;
+}

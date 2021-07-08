@@ -25,9 +25,19 @@ function Entrytimelineday(props){
        
     }
 
+    //Hover Offset Correction (needs to move an additional amount based on where the task entry is positioned)
+    const topSpacing = props.top;
+    const leftSpacing = props.left; 
+
+
+    const topCorrect = parseInt(topSpacing.substring(0, topSpacing.indexOf("r")));
+    const leftCorrect = parseInt(leftSpacing.substring(0, leftSpacing.indexOf("r")));
+
     function handlePosition(e){
-        setX(e.nativeEvent.offsetX + 30);
-        setY(e.nativeEvent.offsetY + 30); 
+
+        
+        setX(e.nativeEvent.offsetX + 50 + (leftCorrect * 16));
+        setY(e.nativeEvent.offsetY - 50 + (topCorrect * 16)); 
     }
 
     // const borderStyle= 
