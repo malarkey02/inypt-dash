@@ -1,0 +1,14 @@
+.grid-wrapper-day{
+    width: 95%;
+    height: 75%;
+    position: relative;
+    
+}
+.date-toggle-arrow-left{
+    transform: rotate(90deg) scale(2.5);
+    
+}
+.date-toggle-arrow-right{
+    transform: rotate(-90deg) scale(2.5);
+ 
+}

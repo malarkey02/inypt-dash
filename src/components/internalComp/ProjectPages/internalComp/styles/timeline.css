@@ -59,7 +59,7 @@ padding: 0%;
     justify-content: space-between;
     width: 70%;
     font-variant: small-caps;
-
+    color: rgb(220, 220, 220);
 
 }
 
@@ -79,6 +79,7 @@ padding: 0%;
     margin-left: 1.5rem;
     font-size: 26px;
     font-weight: 600;
+    margin-bottom: 0%;
 }
 
 .timeline span {
@@ -87,6 +88,37 @@ padding: 0%;
     line-height: 14px;
     
 }
+.project-overall-progress{
+    display: flex;
+    margin: 0 1.5rem;
+    position: relative;
+}
+.project-overall-progress > p{
+    font-size: 15px;
+    color: rgb(231, 231, 231);
+}
+.project-overall-progress-bar{
+    height: 5px;
+    width: 5rem;
+    border-radius: 2.5px;
+    background-color: rgb(87, 87, 87);
 
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
+.project-overall-progress-indicator{
+    height: 5px;
+    width: 3rem;
+    border-radius: 2.5px;
+    background: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 

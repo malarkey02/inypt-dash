@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import './styles/timeline.css';
-import Timelinegridweek from "./Timelinegridweek";
+import TimelinegridweekTwelve from "./TimelinegridweekTwelve";
 import Timelinegridday from "./Timelinegridday";
+import TimelinegridtoggleDay from "./TimelinegridtoggleDay";
+
+// import TimelinegridtoggleWeek from "./STANDBY_TimelinegridtoggleWeek";
 
 function Timeline(){
 
@@ -19,12 +22,21 @@ function Timeline(){
                 
                 <div className="toggle-buttons"> <button onClick={handleDailyClick} className={dailyClicked ? "daily-active":"daily-inactive"}>Daily</button> <button onClick={handleMonthClick} className={dailyClicked ? "month-inactive":"month-active"} >Month</button></div>
                 <h2>Project Timeline </h2>
+                <div className="project-overall-progress">
+                    <p>56%</p>
+                    <div className="project-overall-progress-bar">
+                    </div>
+                    <div className="project-overall-progress-indicator">
+                    </div>
+                </div>
                 
+                {/* you need to have some state that determines which month it is and which date it is. The arrows should move the date. Not a number. Move 7days ahead/back */}
+
                 {!dailyClicked ? <p className="phase-text"> <span>phase 1</span> <span>phase 2</span> <span>phase 3</span> </p>:<p className="phase-text"></p>}
 
                 <div className="weeks-days">
 
-                    {dailyClicked ? <Timelinegridday /> : <Timelinegridweek/>}
+                    {dailyClicked ? <TimelinegridtoggleDay /> : <TimelinegridweekTwelve/>}
                     
 
                         

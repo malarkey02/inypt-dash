@@ -10,7 +10,7 @@ function Timelinegrid (){
 
     let arr=[];
 
-    for(var i = 1; i<=12; i++){
+    for(var i = 1; i<=6; i++){
         let month = today.toLocaleString('default', { month: 'short' });
         let day = today.getUTCDate();
 
@@ -26,7 +26,7 @@ function Timelinegrid (){
     }
 
     function createWeekCol(e){
-        return <div className="week-column">
+        return <div className="week-column-15width">
         <h1>WEEK {e.week}</h1>
         <p>{e.month} {e.day}</p>
           </div>
@@ -34,9 +34,12 @@ function Timelinegrid (){
 
     const subtasks=[{subtask: "Select Important Variables", due:"25/06"}, {subtask: "Identify Setup Equipment", due:"27/06"} ]; 
     const desc = "Review variables you can change, cataloging set up. This period has " + subtasks.length + " subtasks ";
+
+
     return <div>
 
     {arr.map(createWeekCol)}
+    <div className="grid-closing-line"></div>
 
   
             <Entrytimelineweek top="5rem" left="0rem"

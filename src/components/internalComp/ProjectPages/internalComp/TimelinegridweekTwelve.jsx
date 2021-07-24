@@ -1,54 +1,53 @@
-import React, {useState} from "react";
+import React from "react";
 import './styles/timelinegridweek.css';
-import Entrytimelineday from "./Entrytimelineday"; 
+import Entrytimelineweek from "./Entrytimelineweek"; 
 
 
-function Timelinegridday (props){
+function Timelinegrid (){
 
-        let today = new Date(props.date);
-        
- 
+    let today = new Date("2021-04-01");
    
 
     let arr=[];
 
-    for(var i = 1; i<=7; i++){
+    for(var i = 1; i<=13; i++){
         let month = today.toLocaleString('default', { month: 'short' });
         let day = today.getUTCDate();
 
         const weekCol = {
-            daydate: day,
+            day: day,
             month: month,
-            day: i
+            week: i
         }
 
         arr.push(weekCol); 
-        today.setDate(today.getDate() + 1); 
+        today.setDate(today.getDate() + 7); 
 
     }
 
     function createWeekCol(e){
-        return <div className="day-column">
-        <h1>Day {e.day}</h1>
-        <p>{e.month} {e.daydate}</p>
+        return <div className="week-column">
+        <h1>WEEK {e.week}</h1>
+        <p>{e.month} {e.day}</p>
           </div>
     }
 
     const subtasks=[{subtask: "Select Important Variables", due:"25/06"}, {subtask: "Identify Setup Equipment", due:"27/06"} ]; 
     const desc = "Review variables you can change, cataloging set up. This period has " + subtasks.length + " subtasks ";
-    return <div>
+    return <div className="grid-wrapper">
+
 
     {arr.map(createWeekCol)}
 
   
-            <Entrytimelineday top="5rem" left="0rem"
+            <Entrytimelineweek top="5rem" left="0rem"
                 color="#CA662E"
                 title="Pre-Exp Research"
                 phase="Experiment"
                 desc={desc}
                 subtasks={subtasks}
             />
-            <Entrytimelineday top="11.5rem" left="25rem" 
+            <Entrytimelineweek top="8rem" left="1rem" 
                 color="#2E9CCA"
                 title="Pre-Exp Research"
                 phase="Experiment"
@@ -58,4 +57,4 @@ function Timelinegridday (props){
         </div>
 }
 
-export default Timelinegridday; 
+export default Timelinegrid; 

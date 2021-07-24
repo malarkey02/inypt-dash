@@ -1,26 +1,52 @@
+.grid-wrapper{
+    width: 95%;
+    height: 75%;
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+}
+
+
 .week-column{
     width: 5rem;
+    height: 20rem;
+    
+    display: inline-block;
+    border-left: 1.75px solid rgb(112, 112, 112);
+
+}
+
+.week-column-15width{
+    width: 15%;
     height: 20rem;
     float: left;
     
     border-left: 1.75px solid rgb(175, 175, 175);
+}
+.grid-closing-line{
+    width: 3px;
+    height: 20rem;
+    float: left;
+    border-left: 1.75px solid rgb(175, 175, 175);
 
 }
 
-
-.week-column h1 {
+.week-column h1, .week-column-15width h1 {
     margin: 15px;
     margin-bottom: 0px;
-
+    color: rgb(220, 220, 220);
     font-weight: 600;
     font-size: 12px;
+    
 }
 
-.week-column p{
+.week-column p, .week-column-15width p{
     margin: 15px;
     margin-top: 0%;
     font-weight: 400;
     font-size: 12px;
+    color: rgb(190, 190, 190);
 }
 
 .day-column{
@@ -34,9 +60,9 @@
 .day-column h1 {
     margin: 15px;
     margin-bottom: 0px;
-
+    color: rgb(220, 220, 220);
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .day-column p{
@@ -44,4 +70,5 @@
     margin-top: 0%;
     font-weight: 400;
     font-size: 12px;
+    color: rgb(190, 190, 190);
 }

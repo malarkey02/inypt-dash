@@ -51,9 +51,7 @@ function Projects({userid}){
     return <div className="projects">
         <div className="content-div">
             <Projecttext />
-            {/* <Projectentry projectkey="#FF8289" status={active} projectname="IYPT Problem Sinking Bubble" projectphase="Qualitative Analysis" />
-             
-            <Projectentry projectkey="#F2C94C" status={complete} projectname="IYPT Problem Cartesian Diver" projectphase="Qualitative Theory" /> */}
+          
             
             {projectList.map(createProjectEntry)}
 
