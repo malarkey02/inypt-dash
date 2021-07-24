@@ -4,11 +4,44 @@
     position: relative;
     
 }
+.date-toggle-box{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.date-text{
+    display: inline-flex;
+    height: 95%;
+}
+.date-text > h2{
+    margin: auto;
+}
+
+.date-toggle-arrows{
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+}
+.click-divs{
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
 .date-toggle-arrow-left{
-    transform: rotate(90deg) scale(2.5);
+    color:#B1B1B1;
+    transform: rotate(90deg) scale(1.75);
+    position: relative;
+    left: 10px;
     
 }
 .date-toggle-arrow-right{
-    transform: rotate(-90deg) scale(2.5);
+    transform: rotate(-90deg) scale(1.75);
+    position: relative;
+    left: 10px;
  
 }

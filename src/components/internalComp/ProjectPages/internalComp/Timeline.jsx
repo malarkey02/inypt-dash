@@ -32,7 +32,7 @@ function Timeline(){
                 
                 {/* you need to have some state that determines which month it is and which date it is. The arrows should move the date. Not a number. Move 7days ahead/back */}
 
-                {!dailyClicked ? <p className="phase-text"> <span>phase 1</span> <span>phase 2</span> <span>phase 3</span> </p>:<p className="phase-text"></p>}
+                {!dailyClicked ? <p className="phase-text"> <span>phase 1</span> <span>phase 2</span> <span>phase 3</span> </p>:null}
 
                 <div className="weeks-days">
 

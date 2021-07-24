@@ -34,14 +34,25 @@ function Timelinegridday (props){
           </div>
     }
 
+    function createTaskRender(e){
+        return <Entrytimelineday top={e.top}
+                left={e.left}
+                color={e.color}
+                title={e.title}
+                phase={e.phase}
+                desc={e.desc}
+                subtasks={e.subtasks} /> 
+
+    }
+
     const subtasks=[{subtask: "Select Important Variables", due:"25/06"}, {subtask: "Identify Setup Equipment", due:"27/06"} ]; 
     const desc = "Review variables you can change, cataloging set up. This period has " + subtasks.length + " subtasks ";
     return <div>
 
     {arr.map(createWeekCol)}
-
+    {props.tasks.map(createTaskRender)}
   
-            <Entrytimelineday top="5rem" left="0rem"
+            {/* <Entrytimelineday top="5rem" left="0rem"
                 color="#CA662E"
                 title="Pre-Exp Research"
                 phase="Experiment"
@@ -54,7 +65,7 @@ function Timelinegridday (props){
                 phase="Experiment"
                 desc={desc}
                 subtasks={subtasks}
-            />
+            /> */}
         </div>
 }
 
