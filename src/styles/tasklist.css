@@ -1,5 +1,4 @@
 .list-container {
- 
   position: relative;
   width: 25%;
   height: 265px;
@@ -16,7 +15,11 @@
     rgba(55, 55, 55, 0) 140.6%
   );
   border-radius: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+
+
 
 .tasklist {
   /* Rectangle 5 */
@@ -26,7 +29,7 @@ left: 1035px;
 top: 170px; */
   position: relative;
   /* top: -125px; */
- 
+
   padding-top: 8%;
   padding-left: 8%;
 }

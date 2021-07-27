@@ -1,10 +1,7 @@
 .App {
   text-align: center;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
-
-
-
 
 .App-header {
   background-color: #282c34;
@@ -30,8 +27,31 @@
   }
 }
 
-
 /* Harsh's Styles */
-.center-align{
+.center-align {
   text-align: center;
+}
+
+nav {
+  position: fixed;
+}
+
+nav > button {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 5%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 90%
+  );
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: raleway;
+  font-weight: 1000;
+  text-shadow: black 1px 1px 4px;
+  transition: transform 0.2s;
+}
+
+nav > button:hover {
+  transform: scale(1.1);
 }

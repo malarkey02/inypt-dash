@@ -3,14 +3,6 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const http = require("http");
-const server = http.createServer(app);
-const io = require("socket.io")(server, {
-  cors: {
-    origin: "http://localhost:3002",
-    methods: ["GET", "POST"],
-  },
-});
 require("dotenv").config();
 
 const app = express();
@@ -143,27 +135,6 @@ app.use("/getprojects", function (req, res) {
         tasklist: foundUser[0].projects,
       });
     }
-  });
-});
-
-//rtc sockets
-io.on("connection", (socket) => {
-  socket.emit("me", socket.id);
-
-  socket.on("disconnect", () => {
-    socket.broadcast.emit("callEnded");
-  });
-
-  socket.on("callUser", (data) => {
-    io.to(data.userToCall).emit("callUser", {
-      signal: data.signalData,
-      from: data.from,
-      name: data.name,
-    });
-  });
-
-  socket.on("answerCall", (data) => {
-    io.to(data.to).emit("callAccepted"), data.signal;
   });
 });
 
