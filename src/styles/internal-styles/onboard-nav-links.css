@@ -1,0 +1,24 @@
+/* 
+link-container >
+checkbox +
+desc +
+meta +
+duration
+*/
+input {
+  margin: 12px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.desc {
+  width: 200%;
+}
+
+.duration {
+  display: block;
+}
