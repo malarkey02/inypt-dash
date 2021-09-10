@@ -5,9 +5,14 @@ import "../styles/App.css";
 import Dashboard from "./Dashboard";
 import Problem5 from "./internalComp/ProjectPages/problem5";
 import Login from "./login/Login";
+
 import useToken from "./login/useToken";
 import Meetings from "./videoChat/meetingWin";
 import Onboard from "./onboarding/onboard";
+
+import Meetings from "./videoChat/meetingWin.jsx";
+import useToken from "./login/useToken";
+
 
 function App() {
   const { token, setToken } = useToken();
@@ -37,6 +42,7 @@ function App() {
         <Route exact path="/onboarding">
           <Onboard />
         </Route>
+
 
         {/* <Route exact path="/login">
             <div className="App">

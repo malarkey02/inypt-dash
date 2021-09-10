@@ -3,13 +3,15 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
 const http = require("http");
-// const io = require("socket.io")(server, {
-//   cors: {
-//     origin: "http://localhost:3002",
-//     methods: ["GET", "POST"],
-//   },
-// });
+const io = require("socket.io")(server, {
+  cors: {
+    origin: "http://localhost:3002",
+    methods: ["GET", "POST"],
+  },
+});
+
 require("dotenv").config();
 
 const app = express();
@@ -146,26 +148,27 @@ app.use("/getprojects", function (req, res) {
   });
 });
 
-//rtc sockets
-// io.on("connection", (socket) => {
-//   socket.emit("me", socket.id);
 
-//   socket.on("disconnect", () => {
-//     socket.broadcast.emit("callEnded");
-//   });
+rtc sockets
+io.on("connection", (socket) => {
+  socket.emit("me", socket.id);
 
-//   socket.on("callUser", (data) => {
-//     io.to(data.userToCall).emit("callUser", {
-//       signal: data.signalData,
-//       from: data.from,
-//       name: data.name,
-//     });
-//   });
+  socket.on("disconnect", () => {
+    socket.broadcast.emit("callEnded");
+  });
 
-//   socket.on("answerCall", (data) => {
-//     io.to(data.to).emit("callAccepted"), data.signal;
-//   });
-// });
+  socket.on("callUser", (data) => {
+    io.to(data.userToCall).emit("callUser", {
+      signal: data.signalData,
+      from: data.from,
+      name: data.name,
+    });
+  });
+
+  socket.on("answerCall", (data) => {
+    io.to(data.to).emit("callAccepted"), data.signal;
+  });
+});
 
 app.listen(3002, function (req, res) {
   console.log("Listening at 3002");
