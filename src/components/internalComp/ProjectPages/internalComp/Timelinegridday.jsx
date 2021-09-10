@@ -6,6 +6,7 @@ import Entrytimelineday from "./Entrytimelineday";
 function Timelinegridday (props){
 
         let today = new Date(props.date);
+        let date_manipulate = new Date(today); 
         
  
    
@@ -13,36 +14,46 @@ function Timelinegridday (props){
     let arr=[];
 
     for(var i = 1; i<=7; i++){
-        let month = today.toLocaleString('default', { month: 'short' });
-        let day = today.getUTCDate();
 
+        let month = date_manipulate.toLocaleString('default', { month: 'short' });
+        let daydate = date_manipulate.getUTCDate();
+        let dayname = date_manipulate.toLocaleString("en", { weekday: "long" });
+        let simpledateID = date_manipulate.toISOString().split("T")[0]; 
         const weekCol = {
-            daydate: day,
+            daydate: daydate,
             month: month,
-            day: i
+            day: dayname,
+            dateID : simpledateID
         }
-
+        console.log(dayname);
         arr.push(weekCol); 
-        today.setDate(today.getDate() + 1); 
+        date_manipulate.setDate(date_manipulate.getDate() + 1); 
 
     }
 
     function createWeekCol(e){
-        return <div className="day-column">
-        <h1>Day {e.day}</h1>
-        <p>{e.month} {e.daydate}</p>
+        return <div className="day-column" id={e.dateID}>
+        <h1>{e.month} {e.daydate}</h1>
+        <p>{e.day}</p>
           </div>
     }
 
-    function createTaskRender(e){
-        return <Entrytimelineday top={e.top}
-                left={e.left}
-                color={e.color}
-                title={e.title}
-                phase={e.phase}
-                desc={e.desc}
-                subtasks={e.subtasks} /> 
+  
 
+    function createTaskRender(e){
+         
+            const taskDateStamp = new Date (e.startDate);
+            const leftIndex = taskDateStamp.getDate() - today.getDate(); 
+            const leftPos = leftIndex * 16 * 8;
+            console.log(leftPos); 
+            return <Entrytimelineday top={e.top}
+            left={leftPos}
+            color={e.color}
+            title={e.title}
+            phase={e.phase}
+            desc={e.startDate}
+            subtasks={e.subtasks} />
+        
     }
 
     const subtasks=[{subtask: "Select Important Variables", due:"25/06"}, {subtask: "Identify Setup Equipment", due:"27/06"} ]; 
@@ -50,6 +61,7 @@ function Timelinegridday (props){
     return <div>
 
     {arr.map(createWeekCol)}
+    {}
     {props.tasks.map(createTaskRender)}
   
             {/* <Entrytimelineday top="5rem" left="0rem"

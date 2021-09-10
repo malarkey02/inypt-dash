@@ -19,13 +19,13 @@ function Projectcards(props){
           id: 1,
         },
         {
-          title: "Problem Fullfillment Aspect",
+          title: "Investigative Parameter/Aspect",
           desc: "The study of why this phenmenon ends up in an in-phase or anti-phase synchronisation is the aspect that will ensure problem completion",
           bannerColor: "#27AE60",
           id: 2,
         },
         {
-          title: "Investigative Phenomenon",
+          title: "Fullfilment Clause",
           desc: "The buring of several candles next to each other, is the action part of the experiement",
           bannerColor: "#7000fe",
           id: 3,

@@ -5,7 +5,7 @@ import "../styles/App.css";
 import Dashboard from "./Dashboard";
 import Problem5 from "./internalComp/ProjectPages/problem5";
 import Login from "./login/Login";
-import Meetings from "./videoChat/meetingWin.jsx";
+// import Meetings from "./videoChat/meetingWin.jsx";
 import useToken from "./login/useToken";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           <Problem5 />
         </Route>
         <Route exact path="/meetings">
-          <Meetings />
+          {/* <Meetings /> */}
         </Route>
 
         {/* <Route exact path="/login">

@@ -30,12 +30,15 @@ function Entrytimeline(props){
 
 
     const topCorrect = parseInt(topSpacing.substring(0, topSpacing.indexOf("r")));
-    const leftCorrect = parseInt(leftSpacing.substring(0, leftSpacing.indexOf("r")));
+    // const leftCorrect = parseInt(leftSpacing.substring(0, leftSpacing.indexOf("r")));
+    const leftCorrect = leftSpacing;
 
     function handlePosition(e){
 
         
-        setX(e.nativeEvent.offsetX + 50 + (leftCorrect * 16));
+        setX(e.nativeEvent.offsetX + 50 + (leftCorrect));
+        // setX(e.nativeEvent.offsetX + 50 + (leftCorrect));
+
         setY(e.nativeEvent.offsetY - 50 + (topCorrect * 16)); 
     }
 
@@ -59,7 +62,8 @@ function Entrytimeline(props){
                         <p className="hover-subtitle">{props.phase} Phase</p>
 
                         <p className="hover-desc"> {props.desc} </p>
-                    <div className="hover-subtasks">
+                        
+                    {/* <div className="hover-subtasks">
                     <table>
                             <colgroup>
                                 <col style={{width: "130px", textAlign:"left", height:"20px"}}/>
@@ -78,7 +82,7 @@ function Entrytimeline(props){
                                    
                         })}
                     </table> 
-                 </div>
+                 </div> */}
                         
 
 
