@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import "./internalComp/styles/Problem.css";
 import Statement from "./internalComp/Statement.jsx";
 import StatementFeature from "./internalComp/Statementfeatures.jsx";
+import Navbar from "../../navbar.js";
+import ProjectLeftPanel from "../ProjectLeftPanel";
 import Timeline from "./internalComp/Timeline";
 // import ProjectTimeline from "./internalComp/Projecttimeline.jsx";
 // import ProjectFeatures from "./internalComp/Projectfeatures.jsx";
@@ -32,9 +34,9 @@ function Problem5() {
 
     return (
       <div className="project-timeline">
-        
+        <Navbar/>
         <div className="proj-title">{projTitle}</div>
-       
+          <ProjectLeftPanel/>
           <div className="status-cards-wrapper">
             <Projectstatus />
             <Projectcards />

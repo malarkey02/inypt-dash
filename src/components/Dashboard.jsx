@@ -12,12 +12,14 @@ import { useHistory } from "react-router-dom";
 //make global styles for buttons and maybe a navbar component
 function Dashboard({ userid }) {
   const history = useHistory();
-  const goMeetings = () => history.push("meetings");
+  // const goMeetings = () => history.push("meetings");
   return (
     <div className="bg-canvas">
-      <nav>
+      {/* <nav>
         <button onClick={goMeetings}>Meetings</button>
-      </nav>
+      </nav> */}
+
+      
       <h1 className="welcome-message"> Welcome, user! </h1>
       <Leaderboard />
       <Progressbar userid={userid} />

@@ -1,0 +1,117 @@
+
+
+.left-panel-div{
+position: fixed;
+width: 17%;
+height: 100vh;
+left: 0px;
+top: 0;
+/* Dark Gradient */
+background: linear-gradient(171.57deg, #1f1f1f 4.73%, #1b1b1b 95.68%);
+filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.35));
+z-index: 0;
+}
+.left-panel-buttons-wrapper{
+    margin-top: 65%;
+
+}
+
+.left-panel-button{
+    width: 75%;
+    height: 30px;
+    position: relative;
+    margin: 0.45rem auto;
+    border-radius: 7px;
+    padding: 7% 5%;
+    transition: all 0.3s ease 0s;
+}
+
+.left-panel-button:hover{
+    background-color: #323232;
+    
+    
+}
+
+
+.left-panel-button-icon{
+    display: inline-block;
+    margin-left: 1rem;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+.left-panel-icon-vector{
+    display: block;
+    margin: 2px auto;
+}
+
+
+.left-panel-button-text{
+    font-size: 0.85rem;
+    line-height: 15px;
+    /* identical to box height */
+    margin-left: 30%;
+    letter-spacing: 0.2em;
+
+    display: inline;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/* Special Styles */
+
+.project-button-wrapper {
+    position: relative;
+    width: 77%;
+    margin: auto;
+    margin-left: 8%;
+}
+
+
+.left-panel-button-projects{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 7px;
+    padding: 7% 5%;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.left-panel-projects {
+    overflow: hidden;  /* Hide the element content, while height = 0 */
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s ease 0.1s;
+    
+
+}
+.left-panel-projects.visible {
+    height: auto; opacity: 1;
+    transition: all 0.3s ease 0.1s;
+    display: block;
+    
+
+}
+
+.panel-projects-list-text{
+    font-size: 13px;
+    color: #9e9e9e;
+    margin: 1.2rem auto;
+    margin-left: 1.75rem;
+    transition: all 0.3s ease 0.1s;
+
+}
+
+.panel-projects-list-text:hover{
+    color: rgb(238, 238, 238);
+    scale: 1.03;
+}

@@ -1,8 +1,10 @@
 .project-timeline {
     /* temp styles */
     /* remove when separate page created */
-width: 90%;
-margin: 3rem auto;
+width: 85%;
+margin: 5rem auto;
+margin-right: 0;
+
 box-sizing: border-box;
 padding: 3%;
 /* padding-right: none; */
