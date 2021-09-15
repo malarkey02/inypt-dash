@@ -13,12 +13,30 @@ input {
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
+  border-radius: 1px;
+  border-bottom: 2px solid #797878;
+  width: 418px;
+
+  margin-bottom: 15px;
+}
+
+.column-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .desc {
   width: 200%;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 8px;
+}
+
+a:visited {
+  color: rgb(139, 238, 255);
 }
 
 .duration {
   display: block;
+  color: #bdbdbd;
 }

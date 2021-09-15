@@ -8,9 +8,11 @@ function Onboard(props) {
     <div className="container">
       <div className="video-embed">
         <iframe
-          //   width="560"
-          //   height="315"
-          src="https://www.youtube.com/embed/73vRi5CS81M" // link here
+          name="onboarding-video"
+          id="onboarding-video"
+          // width="560"
+          // height="315"
+          // src="https://www.youtube.com/embed/oHdliuRaP04"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -18,9 +20,18 @@ function Onboard(props) {
         ></iframe>
       </div>
       <div className="nav-pane">
-        Nav pane
         {/* show list of links... here*/}
-        <NavigateLink description="go fuck yoself" duration="6 mins" />
+        <NavigateLink
+          description="Your absence is required"
+          duration="6 mins"
+          src="https://www.youtube.com/embed/oHdliuRaP04?autoplay=1"
+        />
+
+        <NavigateLink
+          description="Dont click plis"
+          duration="6 mins"
+          src="https://www.youtube.com/embed/7rE_FG2xauA?autoplay=1&start=8"
+        />
         {/* "description" and "duration" values from YT api i think */}
       </div>
     </div>

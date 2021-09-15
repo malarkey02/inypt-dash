@@ -32,6 +32,9 @@
 }
 .nav-pane {
   margin-left: 10px;
+
+  padding-top: 30px;
+  padding-left: 15px;
   width: 495px;
 
   background: #474747;
