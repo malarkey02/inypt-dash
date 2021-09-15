@@ -10,10 +10,6 @@ import useToken from "./login/useToken";
 import Meetings from "./videoChat/meetingWin";
 import Onboard from "./onboarding/onboard";
 
-import Meetings from "./videoChat/meetingWin.jsx";
-import useToken from "./login/useToken";
-
-
 function App() {
   const { token, setToken } = useToken();
 
@@ -42,7 +38,6 @@ function App() {
         <Route exact path="/onboarding">
           <Onboard />
         </Route>
-
 
         {/* <Route exact path="/login">
             <div className="App">
